@@ -1,19 +1,67 @@
-header{text-align: center; 
-    background-color:rgba(89, 195, 234, 0.5);
-    border-radius: 30%;
-    padding: 1%;}
 
-a{color: black;}
+body {
+    --bg-color: #ececec;
+    --text-color: #212121;
+    --color-1: #94009c;
+    --color-2: #b0539c;
 
-.passions{display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 5px;}
+}
 
-/*.photo{background-image: url(images/IMG_2197.JPG);
-    background-position: 50%;
-    border-radius: 25%;
-    text-align: center;}
-*/
+.dark {
+    --bg-color: #212121;
+    --text-color: #ececec;  
+    --color-1: #00949C;
+    --color-2: #53ADB0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+a{
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+#change-mode {
+  color: var(--bg-color);
+  background-color: var(--color-1);
+  transition: all 1s ease-out;
+  width: 50px;
+  border: 1px solid var(--bg-color);
+  border-radius: 18px;
+  padding: 8px 12px;
+  text-align: center;
+  font: bold 12px Verdana;
+}
+
+header{
+    text-align: center; 
+    background-color:var(--color-2);
+    border-radius: 15%;
+    padding: 1%;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.interets {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.passion {
+    background-color: var(--color-1);
+    border: 2px solid var(--bg-color);
+    border-radius: 15%;
+    padding: 25px;
+    margin: 20px;
+	float: left;
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+}
+
 
 
