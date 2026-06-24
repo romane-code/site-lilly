@@ -1,0 +1,37 @@
+.clair {
+    --bg-color: #fefcf1;
+    --text-color: #01030e;
+    --color-1: #f1afa2;
+    --color-2: #b9272e;
+    --color-3: #ff0135;
+}
+
+body {
+    --bg-color: #01030e;
+    --text-color: #fefcf1;  
+    --color-1: #0d4f5c;
+    --color-2: #46d6d2;
+    --color-3: #00feca;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+.bouton {
+  color: var(--bg-color);
+  background-color: var(--color-1);
+  transition: all 1s ease-out;
+  border: 1px solid var(--text-color);
+  border-radius: 18px;
+  padding: 8px 12px;
+  margin-right: 5px;
+  text-align: center;
+  font: bold 12px Verdana;
+}
