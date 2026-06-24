@@ -1,6 +1,5 @@
 a{
     color: var(--text-color);
-	color: red !important;
     transition: 0.5s;
 }
 
