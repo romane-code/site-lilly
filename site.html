@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Romane FEAU - Site Officiel</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="site.css">
+        <script src="java.js" defer></script>
+        <script> 
+        const mode = localStorage.getItem('mode');
+        if (mode === 'clair') { 
+            document.documentElement.classList.add('clair');
+        }</script>
+
+    </head>
+
+    <body id='accueil'>
+        <header>
+            <div id="menu">
+                <img id='logo2' src="image/Logo.png" alt="Logo"
+                    style="width: 200px; border-radius: 50%; margin: 15px;">
+            <div class="reperes">
+                <p class="bouton"><a href="#moi">A Mon Sujet</a></p>
+                <p class="bouton"><a href="#parcours">Mon Parcours</a></p>
+                <p class="bouton"><a href="#projets">Mes Projets</a></p>
+                <p class="bouton"><a href="#experience">Mon Experience</a></p>
+                <p class="bouton"><a href="#interets">Mes Centres d'Intérêt</a></p>
+                <p class="bouton"><a href="#compétences">Mes Compétences</a></p>
+                <p class="bouton"><a href="#certifications">Mes Certifications</a></p>
+                <p class="bouton"><a href="#contact">Mes Contacts</a></p>
+            </div>
+            </div>
+
+            <div id="menu-lateral">
+                <button id='change-mode' class="bouton">☀️</button>
+                <p class="bouton"><a href="#accueil">Accueil</a></p>
+                <img id='logo' src="image/Logo.png" alt="Logo"
+                    style="width: 200px; border-radius: 50%; margin: 15px;">
+            <div class="reperes-lateral">
+                <p class="bouton"><a href="#moi">A Mon Sujet</a></p>
+                <p class="bouton"><a href="#parcours">Mon Parcours</a></p>
+                <p class="bouton"><a href="#projets">Mes Projets</a></p>
+                <p class="bouton"><a href="#experience">Mon Experience</a></p>
+                <p class="bouton"><a href="#interets">Mes Centres d'Intérêt</a></p>
+                <p class="bouton"><a href="#compétences">Mes Compétences</a></p>            
+                <p class="bouton"><a href="#certifications">Mes Certifications</a></p>
+                <p class="bouton"><a href="#contact">Mes Contacts</a></p>
+            </div>
+            </div>
+
+            <div class="header">
+                <h1>Enchantée ! </h1>
+                <h2>Je me présente : Romane Féau</h2><BR>
+                <p>Actuellement élève de Terminale, <BR>
+                    J'ai réalisé ce site dans un seul but :<BR>
+                    Vous faire découvrir mon parcours, <BR>
+                    Mes compétences et mes centres d'intérêt, <BR>
+                    Mais surtout, la personne que je suis.</p><BR>
+            </div>
+        </header>
+
+        <main>
+            <BR>
+            
+            <div id='moi' class="section">
+                <h2>~ À Mon Sujet ~</h2>
+            </div>
+            <div id='mon_sujet' class="content">
+                <img id='renard3' src="image/Renard_3.png" alt="Renard"
+                    style="width: 350px; margin: 15px;">
+                <p style="top: 16%; left: 31.5%; text-align: center;">Curieuse de tout. <BR> <b>Absolument</b> tout.</p>
+                <p style="top: 27.9%; left: 72.3%;">Créative et un peu décalée</p>
+                <p style="top: 40%; left: 27.8%; text-align: center;">Timide... <BR> au début ! </p>
+                <p style="top: 72%; left: 64.5%; text-align: center;">Et <BR> ouais, <BR> elle est <BR> comme ça <BR> Romane </p>
+            </div>
+
+
+            <div id='parcours' class="section">
+                <h2>~ Mon Parcours ~</h2>
+            </div>
+            <div id='etudes' class="content">
+                <p style="top: 15%; left: 30%;">6°</p>
+                <p style="top: 16%; left: 45%;">CNED</p>
+                <p style="top: 17%; left: 60%;">3°</p>
+                <p style="top: 45%; left: 70%;">2nde</p>
+                    <p style="top: 42%; left: 55%;">Option SI</p>
+                <p style="top: 55%; left: 41%;">1ère</p>
+                    <p style="top: 50%; left: 12%;">Spé Maths</p>
+                    <p style="top: 56.5%; left: 12%;">Spé NSI</p>
+                    <p style="top: 63%; left: 12%;">Spé SI</p>
+                    <p style="top: 33%; left: 28%;">BIA</p>
+                <p style="top: 88%; left: 29.5%;">SI</p>
+                <p style="top: 84%; left: 60%;">Terminale</p>
+                    <p style="top: 72%; left: 64.5%;">Maths Expertes</p>
+                    <p style="top: 60%; left: 81%;">Spé Maths</p>
+                    <p style="top: 66.5%; left: 81%;">Spé NSI</p>
+            </div>
+
+
+            <div id='projets' class="section">
+                <h2>~ Mes Projets ~</h2>
+            </div>
+            <div class="content">
+                <div class="zoomable">
+                <div id='Lyre' class="box">
+                    <h2> La lyre de A à Z </h2><BR>
+                    <p> Projet de SI de première, 
+                        il s'agissait de penser puis de modeliser une lyre, ou projecteur motorisé, grâce à une imprimante 3D,
+                        pour ensuite réaliser le circuit électrique et la programmation.</p>
+                    <p> De plus, il fallait écrire un rapport conforme au monde professionnel, et faire une présentation du produit.</p>    
+                </div></div>
+
+
+                <div class="zoomable">
+                <div id='Musique' class="box">
+                    <h2> L'apppli de lecture de musique </h2><BR>
+                    <p> Premier projet de NSI en première, 
+                        il s'agissait, à l'aide de la bibliothèque CustomTKinter,
+                        de faire une interface affichant les informations de la musique, 
+                        ainsi que, évidemment, lire cette musique.</p>  
+                </div></div>
+
+                <div class="zoomable">
+                <div id='Vidéo' class="box">
+                    <h2> Le site de visionnage vidéo, Nexo </h2><BR>
+                    <p> Second projet de NSI, 
+                        il s'agissait de designer et coder un site, 
+                        avec système de like et de vues,
+                        sur lequel des vidéos d'informatique seraient disponibles.</p>
+                    <p> Aujourd'hui, les vidéos ont été changées, remplacées par d'autres plus divertissantes</p> 
+                    <p> c(^-^c) </p> 
+                </div></div>
+
+                <div class="zoomable">
+                <div id='Site' class="box">
+                    <h2> Site de présentation </h2><BR>
+                    <p> Et oui, comment ne pas parler de ce site... sur lequel vous naviguez !</p>
+                    <p> Un projet personnel, depuis longtemps dans ma tête, mais qui a mis le temps pour voir le jour</p>  
+                </div></div>
+
+                <div class="zoomable">
+                <div id='Echec' class="box">
+                    <h2> Jeu d'échecs </h2><BR>
+                    <p> A l'origine projet de NSI de Terminale consistant à prédire les déplacements possibles des pièces, il a été bien amélioré par moi ensuite.</p>
+                    <p> En plus, réalisé en individuel, je le considère donc comme un projet personnel.</p>  
+                </div></div>
+
+            </div>
+
+
+            <div id='experience' class="section">
+                <h2>~ Mes Experiences ~</h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <p>Stages : Liber&Vous, E-artsup, SupInfo</p>
+                    <p>Concours : Inovatech</p>
+                </div>
+            </div>
+
+
+            <div id='interets' class="section">
+                <h2>~ Mes Centres d'Intérêt ~</h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <p>travaux manuels de toutes sortes (dessin, peinture, etc... mais aussi bricolage, mécanique...)<br> <br>
+                        lecture de tout, roman, BD, manga... <br> <br>
+                        apprendre des trucs, peu importe le sujet (préférances quand même pour l'astrologie, les civilisations antiques et leur religion, l'archéologie... bref, la science en générale)<br><br>
+                        les jeux (vidéos, de carte, de plateau... je suis d'ailleurs très douée pour en comprendre et expliquer les règles)</p>
+                </div>
+            </div>
+
+
+            <div id='compétences' class="section">
+                <h2>~ Mes Compétences ~</h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <p> I can un peu talk english, but it's not very bien. El mismo por el español, puedo hablar sin trop conjuguer los verbos.</p>
+                    <p> Je maitrise, plus ou mien bien, différents languages informatiques comme le html, le css, le JavaScript, le C++, python...<br>
+                        J'ai également quelques base en rédaction LaTeX.</p>
+                    <p> Je maitrise aussi des outils tels que SolidWorks ou Tinkercad.</p>
+                </div>
+            </div>            
+
+
+             <div id='certifications' class="section">
+                <h2>~ Mes Certifications ~</h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                </div>
+            </div>
+
+
+            <div id='contact' class="section">
+                <h2>~ Mes Contacts ~</h2>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <p>Mon adresse e-mail : <b>romadart1@gmail.com</b></p>
+                    <p>Mon numéro de téléphone : <b>07 89 68 22 12</b></p>
+                    <p>Ma localisation : <b>Chinon, France</b></p>
+                    <p>GitHub : <b>https://github.com/romane-code</b></p>
+                    <BR><BR>
+                    <p>Je suis joignable pour toute question sur mon parcours et ma candidature <BR>
+                        Cordialement <BR>
+                        Romane FEAU</p>
+                    
+                </div>
+            </div>
+        </main>
+
+        <div id="overlay"></div>
+
+        <div id="Details_Lyre" class="detail">
+            <h2> La lyre, de A à Z</h2><BR>
+            <p> Projet de 12H réalisé en groupe de 6</p>
+            <p> Il ne fut malheureusement jamais terminé, pour cause d'imprimante 3D hors service</p>
+                    
+        </div>
+    </body>
+</html>
