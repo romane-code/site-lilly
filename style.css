@@ -4,25 +4,63 @@
     --color-1: #f1afa2;
     --color-2: #b9272e;
     --color-3: #ff0135;
+    --img-1 : url(image/Mon_sujet_inverse.png);
+    --img-2 : url(image/Parcours_inverse.png);
 }
-
 body {
     --bg-color: #01030e;
     --text-color: #fefcf1;  
-    --color-1: #0d4f5c;
-    --color-2: #46d6d2;
+    --color-1: rgb(13, 79, 92);
+    --color-2: rgb(70, 214, 210);
     --color-3: #00feca;
+    --img-1 : url(image/Mon_sujet.png);
+    --img-2 : url(image/Parcours_2.png);
 }
+
+
 
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: 0.5s;
 }
+a {
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+
+
+#logo, #logo2, #renard3 {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#logo.fade, #logo2.fade, #renard3.fade {
+    opacity: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header{
+    text-align: center; 
+    background-color:var(--color-2);
+    border: 2px solid var(--text-color);
+    border-radius: 15%;
+    padding: 3%;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+
 
 .bouton {
   color: var(--bg-color);
@@ -31,7 +69,81 @@ body {
   border: 1px solid var(--text-color);
   border-radius: 18px;
   padding: 8px 12px;
-  margin-right: 5px;
+  margin: 5px;
   text-align: center;
   font: bold 12px Verdana;
 }
+.bouton:hover {
+    transform: scale(1.1);
+}
+
+
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reperes {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menu-lateral {
+    background-color: var(--color-2);
+    border-radius: 15%;
+    border: 3px solid var(--bg-color);
+    padding: 3%;
+
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    width: 300px;
+    transform: translate(-100%, -50%);
+    transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0.25;
+    z-index: 2;
+}
+#menu-lateral:hover {
+    left: -50px;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+.reperes-lateral {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
