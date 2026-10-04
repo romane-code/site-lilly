@@ -101,7 +101,7 @@
 #Lyre, #Musique, #Vidéo {
     background-color: var(--color-1);
 }
-#Site {
+#Site, #Echec {
     background-color: var(--color-2);
 }
 
