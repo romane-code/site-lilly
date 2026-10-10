@@ -6,7 +6,7 @@
         <title>Romane FEAU - Site Officiel</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="site.css">
-        <script src="java.js" defer></script>
+        <script src="java_parcoursup.js" defer></script>
         <script> 
         const mode = localStorage.getItem('mode');
         if (mode === 'clair') { 
@@ -90,7 +90,8 @@
                     <p style="top: 56.5%; left: 12%;">Spé NSI</p>
                     <p style="top: 63%; left: 12%;">Spé SI</p>
                     <p style="top: 33%; left: 28%;">BIA</p>
-                <p style="top: 88%; left: 29.5%;">SI</p>
+                <p style="top: 93%; left: 70%;">~ Spé SI</p>
+                <p style="top: 90%; left: 45%;">Spé Physique niv. 1ère</p>
                 <p style="top: 84%; left: 60%;">Terminale</p>
                     <p style="top: 72%; left: 64.5%;">Maths Expertes</p>
                     <p style="top: 60%; left: 81%;">Spé Maths</p>
@@ -102,49 +103,93 @@
                 <h2>~ Mes Projets ~</h2>
             </div>
             <div class="content">
-                <div class="zoomable">
+
                 <div id='Lyre' class="box">
-                    <h2> La lyre de A à Z </h2><BR>
+                    <h2> La lyre, de A à Z </h2><BR>
+                </div>
+                <div id="Details_Lyre" class="detail">
+                    <h2>La lyre, de A à Z</h2><BR>
                     <p> Projet de SI de première, 
                         il s'agissait de penser puis de modeliser une lyre, ou projecteur motorisé, grâce à une imprimante 3D,
-                        pour ensuite réaliser le circuit électrique et la programmation.</p>
-                    <p> De plus, il fallait écrire un rapport conforme au monde professionnel, et faire une présentation du produit.</p>    
-                </div></div>
+                        pour ensuite réaliser le circuit électrique et la programmation. <BR>
+                        De plus, il fallait écrire un rapport conforme au monde professionnel, et faire une présentation du produit.</p>    
+                    <p> Durée = 12H <BR>
+                        Effectif = 6 personnes <BR>
+                        Status = Jamais terminé, pour cause de disfonctionnement de l'imprimante 3D <BR></p>
+                    <p> Comme à chaque projet de groupe, je me suis rendu compte de l'importance de la communication et des collègues de travail (à croire que je tombe toujours sur les pires -_-). <BR>
+                        J'ai également apprit la difficulté de la mise en commun du travail de chacun ainsi que de la prévention des potentiels imprévus ou prérequis,<BR>
+                        et enfin celle d'un rapport sérieux et détaillé et d'une présentation professionnelle.</p>   
+                    <p> Avec ce projet, j'ai consolidé mes connaissances en : <BR><BR>
+                        modélisation 3D via SolidWorks, <BR>
+                        Aduino et C++ via Tinkercad, <BR>
+                        rédaction LaTeX via Overleaf. <BR></p>
+                    <p> Je n'ai malheureusement pas pu récupérer le peu que nous avions imprimer pour continuer de travailler sur le projet, <BR>
+                        mais l'idée d'en refaire un est déjà dans ma tête, et peut-être qu'un jour elle se concrétisera.</p>  
+                </div>
 
-
-                <div class="zoomable">
                 <div id='Musique' class="box">
-                    <h2> L'apppli de lecture de musique </h2><BR>
+                    <h2> L'appli de lecture de musique </h2><BR>
+                    <img src="images_non_utilisées/Musique.png">
+                </div>
+                <div id="Details_Musique" class="detail">
+                    <h2> Lecteur de Musique </h2><BR>
                     <p> Premier projet de NSI en première, 
                         il s'agissait, à l'aide de la bibliothèque CustomTKinter,
-                        de faire une interface affichant les informations de la musique, 
-                        ainsi que, évidemment, lire cette musique.</p>  
-                </div></div>
+                        de faire une interface permettant de lire la musique et d'accéder à ses informations.</p>  
+                    <p> Durée = 6H + extras<BR>
+                        Effectif = 4 personnes <BR>
+                        Status = Terminé, en attente d'améliorations <BR></p> 
+                    <p> Ce projet, que  j'ai vraiment pris plaisir à faire, a été une découverte de CustomTKinter, <BR>
+                        ainsi que du traitement des métadonnées des fichiers (ici mp4).</p>    
+                    <p> Pour le coup, ça a vraiment été un projet centré sur le python, et bien que peu développé ou optimisé car premier grand programme, <BR>
+                        il a été très instructif sur différentes bibliothèques : <BR><BR>
+                        CustomTKinter, <BR>
+                        eyed3, <BR>
+                        pygame, <BR>
+                        et os.</p>
+                </div>
 
-                <div class="zoomable">
-                <div id='Vidéo' class="box">
+                <div id='Video' class="box">
                     <h2> Le site de visionnage vidéo, Nexo </h2><BR>
-                    <p> Second projet de NSI, 
-                        il s'agissait de designer et coder un site, 
-                        avec système de like et de vues,
-                        sur lequel des vidéos d'informatique seraient disponibles.</p>
-                    <p> Aujourd'hui, les vidéos ont été changées, remplacées par d'autres plus divertissantes</p> 
-                    <p> c(^-^c) </p> 
-                </div></div>
+                </div>
+                <div id="Details_Video" class="detail">
+                    <h2> Le site de visionnage vidéo, Nexo</h2><BR>
+                    <p> Second projet de NSI, il s'agissait de designer et programmer un site, avec système de like et de vues, sur lequel des vidéos seraient disponibles.</p>
+                    <p> Durée = 12H + extras<BR>
+                        Effectif = 4 personnes <BR>
+                        Status = Terminé, en attente d'améliorations <BR></p>
+                    <p> Avec ce site, j'ai utilisé pour la première fois, avec une collègue, du JavaScript pour une barre de recherche, <BR> 
+                        et travaillé le traitement css, avec des transitions et une jolie mise en page (j'espère >_<).<BR></p>
+                    <p> J'ai appris l'importance des docstrings et de la communication avant et pendant la réunification des programmes et fonctions.</p>
+                </div>
 
-                <div class="zoomable">
                 <div id='Site' class="box">
                     <h2> Site de présentation </h2><BR>
+                    <img id="logo3" src="image/Logo.png">
+                </div>
+                <div id="Details_Site" class="detail">
+                    <h2> Site de présentation</h2><BR>
                     <p> Et oui, comment ne pas parler de ce site... sur lequel vous naviguez !</p>
-                    <p> Un projet personnel, depuis longtemps dans ma tête, mais qui a mis le temps pour voir le jour</p>  
-                </div></div>
+                    <p> Un projet personnel, depuis longtemps dans ma tête, mais qui a mis le temps pour voir le jour.<BR>
+                        Encore aujourd'hui, des modifications et ajouts sont effectuées des manière très ponctuelle</p>
+                    <p> Pour ce projet, la difficulté à été dans la façon de rassembler toutes les informations de manière à me ressembler, <BR>
+                        tout en restant dans la limite du raisonnable '^^. <BR>
+                        De plus, j'ai essayé d'utiliser tout ce que je savais afin de montrer mes compétences, mais j'ai finalement plus trouvé ce que je devais retravailler. <BR>
+                        Mais ça a été tout aussi bénéfique, finalement.</p>
 
-                <div class="zoomable">
+                </div>
+
                 <div id='Echec' class="box">
                     <h2> Jeu d'échecs </h2><BR>
-                    <p> A l'origine projet de NSI de Terminale consistant à prédire les déplacements possibles des pièces, il a été bien amélioré par moi ensuite.</p>
-                    <p> En plus, réalisé en individuel, je le considère donc comme un projet personnel.</p>  
-                </div></div>
+                </div>
+                <div id="Details_Echec" class="detail">
+                    <h2> Jeu d'échecs</h2><BR>
+                    <p> A l'origine projet de NSI de Terminale consistant à prédire les déplacements possibles des pièces, il a été bien amélioré par moi ensuite. <BR>
+                        En plus, réalisé en individuel pour raison de coéquipiaire indisponible, je le considère donc comme un projet personnel.</p>  
+                    <p> Durée = 6H + extras<BR>
+                        Effectif = 2 personnes <BR>
+                        Status = Terminé, en cours d'amélioration <BR></p>
+                </div>
 
             </div>
 
@@ -153,7 +198,7 @@
                 <h2>~ Mes Experiences ~</h2>
             </div>
             <div class="content">
-                <div class="box">
+                <div class="box2">
                     <p>Stages : Liber&Vous, E-artsup, SupInfo</p>
                     <p>Concours : Inovatech</p>
                 </div>
@@ -164,7 +209,7 @@
                 <h2>~ Mes Centres d'Intérêt ~</h2>
             </div>
             <div class="content">
-                <div class="box">
+                <div class="box2">
                     <p>travaux manuels de toutes sortes (dessin, peinture, etc... mais aussi bricolage, mécanique...)<br> <br>
                         lecture de tout, roman, BD, manga... <br> <br>
                         apprendre des trucs, peu importe le sujet (préférances quand même pour l'astrologie, les civilisations antiques et leur religion, l'archéologie... bref, la science en générale)<br><br>
@@ -177,7 +222,7 @@
                 <h2>~ Mes Compétences ~</h2>
             </div>
             <div class="content">
-                <div class="box">
+                <div class="box2">
                     <p> I can un peu talk english, but it's not very bien. El mismo por el español, puedo hablar sin trop conjuguer los verbos.</p>
                     <p> Je maitrise, plus ou mien bien, différents languages informatiques comme le html, le css, le JavaScript, le C++, python...<br>
                         J'ai également quelques base en rédaction LaTeX.</p>
@@ -190,7 +235,7 @@
                 <h2>~ Mes Certifications ~</h2>
             </div>
             <div class="content">
-                <div class="box">
+                <div class="box2">
                 </div>
             </div>
 
@@ -199,7 +244,7 @@
                 <h2>~ Mes Contacts ~</h2>
             </div>
             <div class="content">
-                <div class="box">
+                <div class="box2">
                     <p>Mon adresse e-mail : <b>romadart1@gmail.com</b></p>
                     <p>Mon numéro de téléphone : <b>07 89 68 22 12</b></p>
                     <p>Ma localisation : <b>Chinon, France</b></p>
@@ -213,13 +258,11 @@
             </div>
         </main>
 
-        <div id="overlay"></div>
-
-        <div id="Details_Lyre" class="detail">
-            <h2> La lyre, de A à Z</h2><BR>
-            <p> Projet de 12H réalisé en groupe de 6</p>
-            <p> Il ne fut malheureusement jamais terminé, pour cause d'imprimante 3D hors service</p>
-                    
+        <div id="overlay">
+            <p id="overlay-text"></p>    
         </div>
+
+
+        
     </body>
 </html>
