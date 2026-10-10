@@ -8,7 +8,7 @@
 
 
 
-.box {
+.box, .box2 {
     border: 2px solid var(--text-color);
     border-radius: 15%;
     padding: 25px;
@@ -22,6 +22,12 @@
 .box:hover {
     transform: scale(1.2);
     z-index: 2;
+    cursor: pointer;
+}
+.box img {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 15%;
 }
 
 
@@ -98,7 +104,7 @@
 
 
 
-#Lyre, #Musique, #Vidéo {
+#Lyre, #Musique, #Video {
     background-color: var(--color-1);
 }
 #Site, #Echec {
@@ -115,35 +121,27 @@
     pointer-events: none;
     transition: opacity 0.3s;
     z-index: 999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #overlay.visible {
     opacity: 1;
     pointer-events: auto;
 }
-.zoomable {
-    cursor: pointer;
-    transition: all 0.3s ease;
+#overlay-text {
+    color: #fefcf1;
+    text-align: center;
 }
-
-
-
 .detail {
     opacity: 0;
     z-index: -1;
-
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 1500px;
-    transform: translate(-50%, -50%);
-
 
     text-align: center;
 }
-.detail.visible {
-    opacity: 1;
-    z-index: 999;
-}
+
 
 
 
