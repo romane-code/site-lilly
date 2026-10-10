@@ -5,7 +5,7 @@
     --color-2: #b9272e;
     --color-3: #ff0135;
     --img-1 : url(image/Mon_sujet_inverse.png);
-    --img-2 : url(image/Parcours_inverse.png);
+    --img-2 : url(image/Parcours_3_inverse.png);
 }
 body {
     --bg-color: #01030e;
@@ -14,7 +14,7 @@ body {
     --color-2: rgb(70, 214, 210);
     --color-3: #00feca;
     --img-1 : url(image/Mon_sujet.png);
-    --img-2 : url(image/Parcours_2.png);
+    --img-2 : url(image/Parcours_3.png);
 }
 
 
@@ -34,11 +34,11 @@ a {
 
 
 
-#logo, #logo2, #renard3 {
+#logo, #logo2, #logo3, #renard3 {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
-#logo.fade, #logo2.fade, #renard3.fade {
+#logo.fade, #logo2.fade, #logo3.fade, #renard3.fade {
     opacity: 0;
 }
 
@@ -75,6 +75,7 @@ header {
 }
 .bouton:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
