@@ -113,14 +113,14 @@ header {
     flex-direction: column;
     gap: 10px;
     opacity: 0.25;
-    z-index: 2;
+    z-index: 3;
 }
 #menu-lateral:hover {
     left: -50px;
     opacity: 1;
     transition: 0.5s;
     transform: translate(0, -50%);
-    z-index: 2;
+    z-index: 3;
 }
 .reperes-lateral {
     width: 300px;
