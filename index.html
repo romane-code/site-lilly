@@ -6,7 +6,7 @@
         <title>Romane FEAU - Site Officiel</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="site.css">
-        <script src="java.js" defer></script>
+        <script src="java_parcoursup.js" defer></script>
         <script> 
         const mode = localStorage.getItem('mode');
         if (mode === 'clair') { 
@@ -151,6 +151,7 @@
 
                 <div id='Video' class="box">
                     <h2> Le site de visionnage vidéo, Nexo </h2><BR>
+                    <img src="image/Nexo.png">
                 </div>
                 <div id="Details_Video" class="detail">
                     <h2> Le site de visionnage vidéo, Nexo</h2><BR>
@@ -159,12 +160,12 @@
                         Effectif = 4 personnes <BR>
                         Status = Terminé, en attente d'améliorations <BR></p>
                     <p> Avec ce site, j'ai utilisé pour la première fois, avec une collègue, du JavaScript pour une barre de recherche, <BR> 
-                        et travaillé le traitement css, avec des transitions et une jolie mise en page (j'espère >_<).<BR></p>
+                        et travaillé le traitement css, avec des transitions et une jolie mise en page.<BR></p>
                     <p> J'ai appris l'importance des docstrings et de la communication avant et pendant la réunification des programmes et fonctions.</p>
                 </div>
 
                 <div id='Site' class="box">
-                    <h2> Site de présentation </h2><BR>
+                    <h2> Le site de présentation de Romane Féau</h2><BR>
                     <img id="logo3" src="image/Logo.png">
                 </div>
                 <div id="Details_Site" class="detail">
@@ -185,10 +186,14 @@
                 <div id="Details_Echec" class="detail">
                     <h2> Jeu d'échecs</h2><BR>
                     <p> A l'origine projet de NSI de Terminale consistant à prédire les déplacements possibles des pièces, il a été bien amélioré par moi ensuite. <BR>
-                        En plus, réalisé en individuel pour raison de coéquipiaire indisponible, je le considère donc comme un projet personnel.</p>  
+                        En plus, réalisé en individuel pour raison de coéquipiaire indisponible, je le considère comme un projet personnel.</p>  
                     <p> Durée = 6H + extras<BR>
                         Effectif = 2 personnes <BR>
                         Status = Terminé, en cours d'amélioration <BR></p>
+                    <p> Avec une interface créée par CustomTKinter, des déplacements de pièces sont désormais faisables, bien que la distinction noire/blanche ne se fasse qu'au niveau des déplacements, <BR>
+                        et non pas des prises de pièces, pour le moment impossibles. </p>
+                    <p> Je travaille actuellement sur cette fonctionnalité, ainsi que sur la retranscription des déplacements effectués, et peut-être une option de minuteur. <BR>
+                        Je voudrais également, à terme, mettre en place les différents coups spéciaux, comme le roque, la prise en passant ou la promotion des pions.</p>
                 </div>
 
             </div>
@@ -198,9 +203,46 @@
                 <h2>~ Mes Experiences ~</h2>
             </div>
             <div class="content">
-                <div class="box2">
-                    <p>Stages : Liber&Vous, E-artsup, SupInfo</p>
-                    <p>Concours : Inovatech</p>
+
+                <div class="menu">
+                    <div class="box2">
+                        <h2> Liber&Vous</h2> 
+                    </div>
+                    <div class="deroulant">
+                        <p> Stage d'observation de 3ème <BR>
+                            la librairie Liber&Vous</p>
+                        <p> </p>
+                    </div>   
+                </div>
+
+                <div class="menu">
+                    <div class="box2">
+                        <h2> E-artSup</h2>    
+                    </div>
+                    <div class="deroulant">
+                        <p> Stage de 2nde <BR>
+                            l'école de jeu vidéo E-artSup</p>
+                    </div> 
+                </div>
+
+                <div class="menu">
+                    <div class="box2">
+                        <h2> SupInfo</h2> 
+                    </div>
+                    <div class="deroulant">
+                        <p> Stage de 2nde <BR>
+                            l'école d'informatique SupInfo</p>
+                    </div>   
+                </div>
+
+                <div class="menu">
+                    <div class="box2">
+                        <h2> InnovaTech</h2> 
+                    </div>
+                    <div class="deroulant">
+                        <p> Challenge InnovaTech <BR>
+                            Elles bougent </p>
+                    </div>   
                 </div>
             </div>
 
@@ -209,7 +251,7 @@
                 <h2>~ Mes Centres d'Intérêt ~</h2>
             </div>
             <div class="content">
-                <div class="box2">
+                <div class="box3">
                     <p>travaux manuels de toutes sortes (dessin, peinture, etc... mais aussi bricolage, mécanique...)<br> <br>
                         lecture de tout, roman, BD, manga... <br> <br>
                         apprendre des trucs, peu importe le sujet (préférances quand même pour l'astrologie, les civilisations antiques et leur religion, l'archéologie... bref, la science en générale)<br><br>
@@ -222,7 +264,7 @@
                 <h2>~ Mes Compétences ~</h2>
             </div>
             <div class="content">
-                <div class="box2">
+                <div class="box3">
                     <p> I can un peu talk english, but it's not very bien. El mismo por el español, puedo hablar sin trop conjuguer los verbos.</p>
                     <p> Je maitrise, plus ou mien bien, différents languages informatiques comme le html, le css, le JavaScript, le C++, python...<br>
                         J'ai également quelques base en rédaction LaTeX.</p>
@@ -235,7 +277,7 @@
                 <h2>~ Mes Certifications ~</h2>
             </div>
             <div class="content">
-                <div class="box2">
+                <div class="box3">
                 </div>
             </div>
 
@@ -244,12 +286,12 @@
                 <h2>~ Mes Contacts ~</h2>
             </div>
             <div class="content">
-                <div class="box2">
-                    <p>Mon adresse e-mail : <b>romadart1@gmail.com</b></p>
-                    <p>Mon numéro de téléphone : <b>07 89 68 22 12</b></p>
-                    <p>Ma localisation : <b>Chinon, France</b></p>
-                    <p>GitHub : <b>https://github.com/romane-code</b></p>
-                    <BR><BR>
+                <div class="box4">
+                    <p> Me contacter : <a href="mailto:romadart1@gmail.com"> <b>par message </b></a> <BR>
+                        Mon numéro de téléphone : <b>07 89 68 22 12</b> <BR>
+                        Ma localisation : <b>Chinon, France</b> <BR>
+                        GitHub : <a href="https://github.com/romane-code"><b>Mon compte</b></a></p>
+                    <BR>
                     <p>Je suis joignable pour toute question sur mon parcours et ma candidature <BR>
                         Cordialement <BR>
                         Romane FEAU</p>
