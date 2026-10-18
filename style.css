@@ -133,6 +133,19 @@ header {
 
 
 
+@media screen and (max-width: 768px) {
+    body{
+        --img-1 : url(image/Mon_sujet_tel.png);
+    }
+    .reperes{
+        max-width: 450px;
+        width: auto;
+    }
+    #menu-lateral:hover {
+        left: -30px;
+    }
+}    
+
 
 
 
