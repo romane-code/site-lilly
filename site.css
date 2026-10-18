@@ -44,6 +44,7 @@
     cursor: pointer;
     background-color: var(--color-1);
     transform: scale(1.2);
+    z-index: 4;
 }
 .box img {
     max-width: 300px;
@@ -77,6 +78,7 @@
     transform: translateY(80%);
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1;
+    z-index: 3;
 }
 .menu {
     padding: 0%;
@@ -101,6 +103,7 @@
 
 #mon_sujet {
     position: relative;
+    min-height: 250px;
     width: 100%;
     aspect-ratio: 4/1;
   
@@ -124,6 +127,25 @@
 #mon_sujet p{
     position: absolute;
     transform: translate(-50%, -50%);
+}
+#p1 {
+    top: 16%; 
+    left: 31.5%; 
+    text-align: center;
+}
+#p2 {
+    top: 27.9%; 
+    left: 72.3%;
+    text-align: center;
+}
+#p3 {
+    top: 40%; 
+    left: 27.8%;
+}
+#p4 {
+    top: 72%; 
+    left: 64.5%; 
+    text-align: center;
 }
 
 
@@ -203,4 +225,35 @@
 
 
 
+
+
+
+
+@media screen and (max-width: 768px) {
+    #mon_sujet {
+        min-height: 500px;
+    }
+    #mon_sujet img{
+        transform: translate(-50%, 0%);
+        top: 12%;
+    }
+    #p1 {
+        top : 17%;
+        left: 48%;
+    }
+    #p2 {
+        width: 50px;
+        top: 25%;
+        left: 19%;
+    }
+    #p3 {
+        top: 50%;
+        left: 16%;
+    }
+    #p4 {
+        top: 15%;
+        left: 80%;
+    }
+
+}
 
